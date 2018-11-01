@@ -17,6 +17,7 @@
 
 namespace SportsStore.UnitTests.DependencyResolution {
     using StructureMap;
+    using System.Configuration;
     using StructureMap.Configuration.DSL;
     using StructureMap.Graph;
 	

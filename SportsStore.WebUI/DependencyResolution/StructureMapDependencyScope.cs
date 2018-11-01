@@ -58,15 +58,15 @@ namespace SportsStore.WebUI.DependencyResolution {
             {
                 WriteAsFile = bool.Parse(ConfigurationManager.AppSettings["Email.WriteAsFile"] ?? "false")
             };
-            container.Inject<EmailSettings>(emailSettings);
+            //container.Inject<EmailSettings>(emailSettings);
             //Mock<IProductRepository> mock = new Mock<IProductRepository>();
-            //mock.Setup(m => m.Products).Returns(new List<Product>
-            ///\{
+           // mock.Setup(m => m.Products).Returns(new List<Product>
+            //{
             //new Product { Name = "Football", Price = 25 },
             //new Product { Name = "Surf board", Price = 179 },
-            //  new Product { Name = " Running shoes", Price = 95 },
-            //});
-            //container.Inject<IProductRepository>(mock.Object);
+            //new Product { Name = " Running shoes", Price = 95 },
+           // });
+           // container.Inject<IProductRepository>(mock.Object);
         }
 
         #region Public Properties
